@@ -18,3 +18,6 @@ oj t -c "python answer.py" -d <testsディレクトリ>
 
 ### 提出するとき
 acc submit answer.py
+
+### input
+https://qiita.com/jamjamjam/items/e066b8c7bc85487c0785
