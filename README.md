@@ -14,7 +14,7 @@ acc new <コンテストID>
 acc add
 
 ### テストするとき
-oj t -c "python answer.py" -d <testsディレクトリ>
+oj t -c "python answer.py" -d tests
 
 ### 提出するとき
 acc submit answer.py
