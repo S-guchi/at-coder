@@ -20,16 +20,24 @@ X Y N
 答えを整数として出力せよ。
 
 """
-X, Y, N = map(int, input().split())
-if N < 3:
-    print(X * N)
-elif Y / 3 > X:
-    print(X * N)
-else:
-    cnt = N / 3
-    if N % 3 > 0:
-        print(cnt * Y)
-    else:
-        mod = N % 3
-        print((cnt * Y) + (mod * X))
+# X, Y, N = map(int, input().split())
+# if N < 3:
+#     print(X * N)
+# elif Y / 3 > X:
+#     print(X * N)
+# else:
+#     cnt = N / 3
+#     if N % 3 > 0:
+#         print(cnt * Y)
+#     else:
+#         mod = N % 3
+#         print((cnt * Y) + (mod * X))
 # ↑解けず、、解説を見る
+
+# pythonの除算を知らんかった
+# //で整数部だけ出せる
+X, Y, N = map(int, input().split())
+if X * 3 > Y:
+    print((N // 3) * Y + (N % 3) * X)
+else:
+    print(X * N)
